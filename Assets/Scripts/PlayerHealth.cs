@@ -6,7 +6,6 @@ public class PlayerHealth : MonoBehaviour
 {
     public float value = 100;
     public RectTransform valueRectTransform;
-
     public GameObject gameplayUI;
     public GameObject gameOverScreen;
 
@@ -21,6 +20,8 @@ public class PlayerHealth : MonoBehaviour
         }
         DrawHealthBar();
     }
+
+
 
     private void PlayerIsDead() 
     {
