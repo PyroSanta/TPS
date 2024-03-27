@@ -525,7 +525,8 @@ MonoBehaviour:
   - {fileID: 593203756}
   viewAngle: 90
   player: {fileID: 1680945047}
-  damage: 30
+  damage: 10
+  attackDistance: 1
   animator: {fileID: 1061039952}
 --- !u!136 &703807882
 CapsuleCollider:
@@ -761,6 +762,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1061039953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1061039950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4448dd3c9a84c0d4a80196c7d3dbaefe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyAI: {fileID: 703807881}
 --- !u!1 &1116310405
 GameObject:
   m_ObjectHideFlags: 0

@@ -22,12 +22,21 @@ public class PlayerHealth : MonoBehaviour
         DrawHealthBar();
     }
 
+    public bool IsAlive()
+    {
+        return value > 0;
+    }
+
+
 
 
     private void PlayerIsDead() 
     {
         gameplayUI.SetActive(false);
         gameOverScreen.SetActive(true);
+        gameOverScreen.GetComponent<Animator>().SetTrigger("show");
+
+
         GetComponent<PlayerController>().enabled = false;
         GetComponent<FireballCaster>().enabled = false;
         GetComponent<CameraRotation>().enabled = false;
