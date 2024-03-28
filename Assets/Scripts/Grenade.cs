@@ -5,7 +5,8 @@ using UnityEngine;
 public class Grenade : MonoBehaviour
 {
     public float delay = 3;
-    public GameObject explosionPrefab; 
+    public GameObject explosionPrefab;
+    public Transform explosionSourceTransform;
     
     private void OnCollisionEnter(Collision collision)
     {
@@ -17,7 +18,7 @@ public class Grenade : MonoBehaviour
     {
         Destroy(gameObject);
         var explosion = Instantiate(explosionPrefab);
-        explosion.transform.position = transform.position;
+        explosion.transform.position = explosionSourceTransform.position;
     }
 }
 

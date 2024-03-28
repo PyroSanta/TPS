@@ -535,10 +535,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4bf4b52407485c418dfa98ea4934d42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minAngle: -30
-  maxAngle: 22
+  minAngle: -45
+  maxAngle: 60
   CameraAxisTransform: {fileID: 5318422235616951872}
-  RotationSpeed: 700
+  RotationSpeed: 500
 --- !u!114 &5318422235801815192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -551,7 +551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa878f0e5a36728438005fef5a06f3a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 0}
+  _animator: {fileID: 2262542070043548431}
   gravity: 9.8
   JumpForce: 10
   Speed: 5
@@ -602,9 +602,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   value: 100
   valueRectTransform: {fileID: 1092516062486976936}
-  gameplayUI: {fileID: 0}
-  gameOverScreen: {fileID: 0}
-  _animator: {fileID: 0}
+  gameplayUI: {fileID: 8530052629264255775}
+  gameOverScreen: {fileID: 3534286515265997193}
+  _animator: {fileID: 2262542070043548431}
 --- !u!114 &1842633140385149514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1128,7 +1128,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1250941268729612499}
   m_Layer: 5
-  m_Name: Gameplat UI
+  m_Name: Gameplay UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
