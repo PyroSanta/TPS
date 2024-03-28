@@ -535,7 +535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4bf4b52407485c418dfa98ea4934d42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minAngle: -45
+  minAngle: -30
   maxAngle: 60
   CameraAxisTransform: {fileID: 5318422235616951872}
   RotationSpeed: 500
