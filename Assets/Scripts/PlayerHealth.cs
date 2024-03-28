@@ -22,6 +22,13 @@ public class PlayerHealth : MonoBehaviour
         DrawHealthBar();
     }
 
+    public void AddHealth(float amount)
+    {
+        value += amount;
+        value = Mathf.Clamp(value, 0, _maxValue);
+        DrawHealthBar();
+    }
+
     public bool IsAlive()
     {
         return value > 0;
