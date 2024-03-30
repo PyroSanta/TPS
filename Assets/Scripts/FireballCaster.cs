@@ -6,6 +6,10 @@ public class FireballCaster : MonoBehaviour
 {
     public Fireball fireballPrefab;
     public Transform FireballSourceTransform;
+    public Animator animator;
+    public float damage = 10;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +21,9 @@ public class FireballCaster : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Instantiate(fireballPrefab, FireballSourceTransform.position, FireballSourceTransform.rotation);
+            var fireball = Instantiate(fireballPrefab, FireballSourceTransform.position, FireballSourceTransform.rotation);
+            fireball.damage = damage;
+            animator.SetTrigger("attack");
         }
     }
 }
